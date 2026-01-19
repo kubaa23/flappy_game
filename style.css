@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: black;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  background: black;
+}
+
+#gameOver {
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
