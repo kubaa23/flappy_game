@@ -5,7 +5,7 @@ const ctx = canvas.getContext("2d");
 let ship = {
   x: 80,
   y: 300,
-  size: 40,
+  size: 120,
   velocity: 0
 };
 
