@@ -5,7 +5,7 @@ const ctx = canvas.getContext("2d");
 let ship = {
   x: 80,
   y: 300,
-  size: 80,
+  size: 50,
   velocity: 0
 };
 
@@ -131,4 +131,5 @@ function restart() {
 }
 
 gameLoop();
+
 
