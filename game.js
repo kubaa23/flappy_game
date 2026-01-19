@@ -5,7 +5,7 @@ const ctx = canvas.getContext("2d");
 let ship = {
   x: 80,
   y: 300,
-  size: 50,
+  size: 90,
   velocity: 0
 };
 
@@ -37,7 +37,7 @@ function boost() {
 
 // ASTEROIDY
 function createAsteroids() {
-  let gap = 160;
+  let gap = 200;
   let topHeight = Math.random() * 250 + 40;
 
   asteroids.push({
@@ -131,5 +131,6 @@ function restart() {
 }
 
 gameLoop();
+
 
 
