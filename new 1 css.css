@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #70c5ce;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  background: #70c5ce;
+}
+
+#ad, .ad {
+  background: #ddd;
+  color: #333;
+  padding: 10px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.ad-top {
+  height: 60px;
+}
+
+.ad-bottom {
+  height: 90px;
+}
+
+#gameOver {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
