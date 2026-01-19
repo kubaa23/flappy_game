@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Flappy Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- GÓRNA REKLAMA -->
+  <div class="ad ad-top">REKLAMA</div>
+
+  <canvas id="game" width="400" height="600"></canvas>
+
+  <!-- REKLAMA PO GAME OVER -->
+  <div id="gameOver">
+    <h2>Koniec gry</h2>
+    <p>Wynik: <span id="score">0</span></p>
+    <div class="ad ad-bottom">REKLAMA</div>
+    <button onclick="restart()">Zagraj ponownie</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
