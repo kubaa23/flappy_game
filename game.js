@@ -1,4 +1,4 @@
-let gameState = "start";
+let gameState = "start"; // start | playing | gameover
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
@@ -145,6 +145,7 @@ function startGame() {
 
 
 gameLoop();
+
 
 
 
