@@ -156,9 +156,22 @@ function startGame() {
   gameRunning = true;
   document.getElementById("startScreen").style.display = "none";
 }
+function startGame() {
+  ship.y = 300;
+  ship.velocity = 0;
+  asteroids = [];
+  score = 0;
+  frame = 0;
+
+  gameState = "playing";
+
+  document.getElementById("startScreen").style.display = "none";
+}
+
 
 
 gameLoop();
+
 
 
 
