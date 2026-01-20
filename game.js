@@ -54,7 +54,7 @@ function createAsteroids() {
 
 // UPDATE
 function update() {
-  if (!gameRunning) return;
+  if (gameState !== "playing") return;
 
   ship.velocity += gravity;
   ship.y += ship.velocity;
@@ -136,6 +136,7 @@ function restart() {
 }
 
 gameLoop();
+
 
 
 
