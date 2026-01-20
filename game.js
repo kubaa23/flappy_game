@@ -82,6 +82,11 @@ function update() {
 
   asteroids = asteroids.filter(a => a.x > -60);
 }
+function endGame() {
+  gameState = "gameover";
+  document.getElementById("gameOver").style.display = "block";
+}
+
 
 // DRAW
 function draw() {
@@ -145,6 +150,7 @@ function startGame() {
 
 
 gameLoop();
+
 
 
 
