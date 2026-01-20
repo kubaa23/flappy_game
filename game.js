@@ -135,7 +135,15 @@ function restart() {
   document.getElementById("gameOver").style.display = "none";
 }
 
+function startGame() {
+  gameState = "playing";
+  gameRunning = true;
+  document.getElementById("startScreen").style.display = "none";
+}
+
+
 gameLoop();
+
 
 
 
