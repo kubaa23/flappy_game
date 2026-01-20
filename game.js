@@ -80,8 +80,10 @@ if (
     if (a.x === ship.x) score++;
   });
 
-  if (ship.y < 0 || ship.y + ship.size > canvas.height) {
-    endGame();
+  if (hitY < 0 || hitY + ship.hitbox > canvas.height) {
+  endGame();
+}
+
   }
 
   asteroids = asteroids.filter(a => a.x > -60);
@@ -157,6 +159,7 @@ function startGame() {
 
 
 gameLoop();
+
 
 
 
