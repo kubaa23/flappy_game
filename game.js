@@ -16,7 +16,6 @@ let gravity = 0.5;
 let asteroids = [];
 let frame = 0;
 let score = 0;
-let gameRunning = true;
 
 // OBRAZY
 const bgImg = new Image();
@@ -159,6 +158,7 @@ function startGame() {
 
 
 gameLoop();
+
 
 
 
