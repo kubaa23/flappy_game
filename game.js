@@ -35,7 +35,9 @@ document.addEventListener("keydown", (e) => {
 });
 
 function boost() {
-  if (gameRunning) ship.velocity = -8;
+  if (gameState === "playing") {
+    ship.velocity = -8;
+  }
 }
 
 // ASTEROIDY
@@ -134,6 +136,7 @@ function restart() {
 }
 
 gameLoop();
+
 
 
 
