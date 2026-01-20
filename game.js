@@ -1,3 +1,4 @@
+let gameState = "start";
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
@@ -133,6 +134,7 @@ function restart() {
 }
 
 gameLoop();
+
 
 
 
