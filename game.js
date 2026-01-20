@@ -6,7 +6,9 @@ let ship = {
   x: 80,
   y: 300,
   size: 90,
+  hitbox: 40,
   velocity: 0
+  
 };
 
 let gravity = 0.5;
@@ -131,6 +133,7 @@ function restart() {
 }
 
 gameLoop();
+
 
 
 
