@@ -65,8 +65,8 @@ function update() {
     a.x -= 2;
 
     // KOLIZJA
-    const hitX = ship.x + (ship.size - ship.hitbox) / 2;
-const hitY = ship.y + (ship.size - ship.hitbox) / 2;
+    const hitX = ship.x + (ship.size - ship.hitbox) / 4;
+const hitY = ship.y + (ship.size - ship.hitbox) / 4;
 
 if (
   hitX + ship.hitbox > a.x &&
@@ -159,6 +159,7 @@ function startGame() {
 
 
 gameLoop();
+
 
 
 
