@@ -151,10 +151,7 @@ function restart() {
 }
 
 
-function startGame() {
-  gameState = "playing";
-  gameRunning = true;
-  document.getElementById("startScreen").style.display = "none";
+
 }
 function startGame() {
   ship.y = 300;
@@ -171,6 +168,7 @@ function startGame() {
 
 
 gameLoop();
+
 
 
 
