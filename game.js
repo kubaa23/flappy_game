@@ -61,36 +61,29 @@ function update() {
 
   if (frame % 100 === 0) createAsteroids();
 
+  const hitX = ship.x + (ship.size - ship.hitbox) / 2;
+  const hitY = ship.y + (ship.size - ship.hitbox) / 2;
+
   asteroids.forEach(a => {
     a.x -= 2;
 
-    // KOLIZJA
-    const hitX = ship.x + (ship.size - ship.hitbox) / 4;
-const hitY = ship.y + (ship.size - ship.hitbox) / 4;
-
-if (
-  hitX + ship.hitbox > a.x &&
-  hitX < a.x + 60 &&
-  (hitY < a.top || hitY + ship.hitbox > a.bottom)
-) {
-  endGame();
-}
-
+    if (
+      hitX + ship.hitbox > a.x &&
+      hitX < a.x + 60 &&
+      (hitY < a.top || hitY + ship.hitbox > a.bottom)
+    ) {
+      endGame();
+    }
 
     if (a.x === ship.x) score++;
   });
 
   if (hitY < 0 || hitY + ship.hitbox > canvas.height) {
-  endGame();
-}
-
+    endGame();
   }
 
   asteroids = asteroids.filter(a => a.x > -60);
 }
-
-}
-
 
 // DRAW
 function draw() {
@@ -166,6 +159,7 @@ function startGame() {
 
 
 gameLoop();
+
 
 
 
