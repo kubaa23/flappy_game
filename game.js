@@ -119,7 +119,7 @@ function gameLoop() {
 
 // GAME OVER
 function endGame() {
-  gameRunning = false;
+  gameState = "gameover";
   document.getElementById("gameOver").style.display = "block";
   document.getElementById("score").innerText = score;
 }
@@ -143,6 +143,7 @@ function startGame() {
 
 
 gameLoop();
+
 
 
 
