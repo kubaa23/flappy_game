@@ -7,7 +7,7 @@ let ship = {
   x: 80,
   y: 300,
   size: 90,
-  hitbox: 40,
+  hitbox: 20,
   velocity: 0
   
 };
@@ -159,6 +159,7 @@ function startGame() {
 
 
 gameLoop();
+
 
 
 
