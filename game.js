@@ -133,7 +133,7 @@ function restart() {
   asteroids = [];
   score = 0;
   frame = 0;
-  gameRunning = true;
+  gameState = "playing";
   document.getElementById("gameOver").style.display = "none";
 }
 
@@ -145,6 +145,7 @@ function startGame() {
 
 
 gameLoop();
+
 
 
 
