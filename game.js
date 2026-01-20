@@ -65,13 +65,17 @@ function update() {
     a.x -= 2;
 
     // KOLIZJA
-    if (
-      ship.x + ship.size > a.x &&
-      ship.x < a.x + 60 &&
-      (ship.y < a.top || ship.y + ship.size > a.bottom)
-    ) {
-      endGame();
-    }
+    const hitX = ship.x + (ship.size - ship.hitbox) / 2;
+const hitY = ship.y + (ship.size - ship.hitbox) / 2;
+
+if (
+  hitX + ship.hitbox > a.x &&
+  hitX < a.x + 60 &&
+  (hitY < a.top || hitY + ship.hitbox > a.bottom)
+) {
+  endGame();
+}
+
 
     if (a.x === ship.x) score++;
   });
@@ -153,6 +157,7 @@ function startGame() {
 
 
 gameLoop();
+
 
 
 
